@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const Sabre = require('../models/Sabre'); // Assure-toi que le chemin est correct
 const data = require('../../starwars-new/src/mongoDB/Sabre.json'); 
+const sabresRouter = require('./routes/sabres');
+app.use('/sabres', sabresRouter);
 
 mongoose.connect('mongodb://localhost:27017/taBaseDeDonnees', {
     useNewUrlParser: true,

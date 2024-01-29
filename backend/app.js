@@ -26,4 +26,4 @@ const sabresRouter = require('./routes/sabres');
 app.use('/sabres', sabresRouter);
 
 const personnagesRouter = require('./routes/Perso');
-app.use('/Persos', personnagesRouter);
+app.use('/Prunersos', personnagesRouter);
